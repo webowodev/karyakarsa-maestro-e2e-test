@@ -1,0 +1,8 @@
+appId: com.karyakarsa
+---
+- runFlow: elements/loadElements.yaml
+- launchApp
+- waitForAnimationToEnd:
+    timeout: 5000
+- runFlow: loginFlow.yaml
+- runFlow: logoutFlow.yaml

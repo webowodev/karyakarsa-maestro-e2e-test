@@ -1,0 +1,16 @@
+appId: com.karyakarsa
+---
+- tapOn:
+    point: ${ output.loginPage.visitPoint }
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn: ${ output.loginPage.inputEmail }
+- inputText: ${output.login.email}
+- tapOn: ${output.loginPage.inputPassword}
+- inputText: ${output.login.password}
+- tapOn:
+    text: ${ output.loginPage.btnLogin }
+    index: 1
+- waitForAnimationToEnd:
+    timeout: 5000
+- assertVisible: ${ output.loginPage.assertSee }

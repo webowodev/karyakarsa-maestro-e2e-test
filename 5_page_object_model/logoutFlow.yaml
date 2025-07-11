@@ -1,0 +1,9 @@
+appId: com.karyakarsa
+---
+- tapOn:
+    point: ${ output.profilePage.visitPoint }
+- scrollUntilVisible:
+    element:
+      text: ${ output.profilePage.linkLogout }
+- tapOn: ${ output.profilePage.linkLogout }
+- assertVisible: ${ output.profilePage.assertSee }

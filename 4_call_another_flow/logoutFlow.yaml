@@ -1,0 +1,9 @@
+appId: com.karyakarsa
+---
+- tapOn:
+    point: 90%,95%
+- scrollUntilVisible:
+    element:
+      text: Keluar
+- tapOn: Keluar
+- assertVisible: Login

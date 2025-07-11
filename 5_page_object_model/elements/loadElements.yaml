@@ -1,0 +1,5 @@
+appId: com.karyakarsa
+---
+- runScript: ../../env.js
+- runScript: ./login.js
+- runScript: ./profile.js

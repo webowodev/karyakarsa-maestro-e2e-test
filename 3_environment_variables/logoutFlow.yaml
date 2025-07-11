@@ -1,0 +1,12 @@
+appId: com.karyakarsa
+---
+- launchApp
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    point: 90%,95%
+- scrollUntilVisible:
+    element:
+      text: Keluar
+- tapOn: Keluar
+- assertVisible: Login

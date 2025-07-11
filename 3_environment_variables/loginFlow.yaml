@@ -1,0 +1,20 @@
+appId: com.karyakarsa
+---
+- launchApp
+- runScript: ../env.js
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    point: 90%,95%
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn: Email
+- inputText: ${output.login.email}
+- tapOn: Password
+- inputText: ${output.login.password}
+- tapOn:
+    text: LOGIN
+    index: 1
+- waitForAnimationToEnd:
+    timeout: 5000
+- assertVisible: Cari Karya atau Kreator
