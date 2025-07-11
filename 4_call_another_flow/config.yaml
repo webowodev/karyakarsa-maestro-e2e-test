@@ -1,0 +1,9 @@
+flows:
+  # - "**" -> kalo pake bintang2 berarti semua flow yang ada di folder ini kita include
+  - "loginFlow.yaml"
+  - "logoutFlow.yaml"
+executionOrder:
+  continueOnFailure: false # Jika ada flow yang gagal test executionnya, maka test nya langsung failed. default is true.
+  flowsOrder:
+    - loginFlow
+    - logoutFlow
