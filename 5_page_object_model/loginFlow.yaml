@@ -2,6 +2,7 @@ appId: com.karyakarsa
 ---
 - tapOn:
     point: ${ output.loginPage.visitPoint }
+- takeScreenshot: loginPage
 - waitForAnimationToEnd:
     timeout: 5000
 - tapOn: ${ output.loginPage.inputEmail }

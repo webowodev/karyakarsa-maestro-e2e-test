@@ -2,14 +2,14 @@ appId: com.karyakarsa
 ---
 - launchApp
 
-# menunggu animasi selesai sebelum melakukan aksi, ini penting biar aksinya tidak ter-eksekusi duluan sebelum halaman nya nampil
+# menunggu animasi selesai sebelum melakukan aksi, ini penting biar aksinya tidak ter-eksekusi duluan sebelum screen nya nampil
 - waitForAnimationToEnd:
     timeout: 5000
 
 # tap pada input cari, selectornya pake teks aja
 - tapOn: Cari Karya atau Kreator
 
-# tunggu lagi animasinya selesai, karena di sini aplikasi pindah halaman dan fokus ke input pencarian
+# tunggu lagi animasinya selesai, karena di sini aplikasi pindah screen dan fokus ke input pencarian
 - waitForAnimationToEnd:
     timeout: 5000
 
@@ -25,3 +25,6 @@ appId: com.karyakarsa
 
 # assert bahwa hasil pencarian menampilkan username pada list karya yang dicari
 - assertVisible: "@Citranovy"
+
+# click @Citranovy untuk membuka first post
+- tapOn: "@Citranovy"

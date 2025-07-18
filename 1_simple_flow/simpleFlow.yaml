@@ -1,3 +1,5 @@
 appId: com.karyakarsa
 ---
 - launchApp
+- tapOn: "Romantis"
+- assertVisible: "Kalau hatimu lagi berbunga-bunga, ini karya yang cocok buat kamu!"

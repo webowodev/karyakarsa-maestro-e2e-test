@@ -5,4 +5,5 @@ appId: com.karyakarsa
 - waitForAnimationToEnd:
     timeout: 5000
 - runFlow: loginFlow.yaml
+# post detail
 - runFlow: logoutFlow.yaml
